@@ -68,10 +68,10 @@ class Mailjet
         $response = json_decode($response);
 
         // catch error...
-        if ((int) ex($response, 'status') >= 400)
+        if ((int) ex($response, 'StatusCode') >= 400)
         {
             // throw error
-            throw new \Exception('Request failed.');
+            throw new \Exception(ex($response, 'ErrorMessage'));
 
             // return false
             return false;
