@@ -14,7 +14,7 @@ Call the ``run`` method:
 use Travis\Mailjet;
 
 $apikey_public = 'your-api-key-public';
-$apikey_secret = 'your-api-key-sercret';
+$apikey_secret = 'your-api-key-secret';
 $list_id = 'your-contact-list-id';
 
 // add new subscriber
